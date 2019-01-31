@@ -1,12 +1,11 @@
 # Organ Donation of Ontario
 
-IDP3-level 4 Group Final project
+put logo branding here
 
 
 ## Getting Started
 
-The main objective of this project is for teams of students to pitch, design and develop a professional
-advertising campaign and website for the Organ Donation Project.
+our team foucse on .....
 
 
 ### Prerequisites
@@ -34,27 +33,6 @@ npm install Bootstrap axios ....
 
 get a package.json and a node_modules that include these folder
 
-## Running the tests
-
-built vue in main.js and areate a  msg in data
-
-### Break down into end to end tests
-
-vue connect successfulty and msg showed in page by {{}} and there is a data in vue rooter checked by vue Detected
-
-```
-{{msg}}
-
-data:{msg:"welcome organ donation!"},
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
