@@ -1,56 +1,38 @@
-# final-organ-donation
-level4 final project
+# Organ Donation of Ontario
+
+put logo branding here
 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+our team foucse on .....
+
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+HTML5, CSS3, Javascript, PHP, Database, mySQL, CMS
+Vue vue-router Bootstrap, iView/mintui/elementui
 
 ```
-Give examples
+method1: cdn  for vue vue-router 
 ```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+method2: npm for Bootstrap etc.
 
 ```
-Give the example
+npm init -y
 ```
 
 And repeat
 
 ```
-until finished
+npm install Bootstrap axios ....
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+get a package.json and a node_modules that include these folder
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
