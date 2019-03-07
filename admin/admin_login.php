@@ -1,4 +1,7 @@
+
+<?php //include('../templates/header.html');?>
 <?php
-//Admin Area  login 
+//Admin Area  login
+echo "log in";
 
 ?>
