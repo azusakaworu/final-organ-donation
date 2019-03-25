@@ -18,16 +18,107 @@
 <body>
 	<main id="app">
 
-<?php include('templates/header.html');?>
+<?php include 'templates/header.html';?>
 
-this is about us pages....
+<section>
+	<div class="container">
+		<div class="row">
+		<div class="col-12">
+				<video width="1000px"  poster="images/video-cover.jpg" controls>
+         <source src="video/1080.mp4" type="video/mp4">
+      </video>
+		</div>
+
+		<div class="col-sm-12 col-md-4">
+			<img src="images/text1.png" alt=""width="300px">
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<img src="images/heroman.png" alt="" width="300px">
+		</div>
+		<div class="col-sm-12 col-md-4">
+			<img src="images/text2.png" alt=""width="400px">
+
+    </div>
+
+	</div>
+	</div>
+
+</section>
+
+
+<section  style="background-color:#aedbf2;" >
+	<div class="container">
+		<div class="row">
+
+		<div class="col-sm-12 col-md-6">
+			<img src="images/all.svg" alt="" width="500px">
+
+		</div>
+			 <div class="col-sm-12 col-md-6">
+				 <h5>WHY BECOME A ORGAN </h5>
+				 <p>22 people die every day while waiting for a transplant.
+            1 organ donor can save 8 lives and change the lives of more then 50 people.
+            Almost anyone can be organ donor, ragardless of age or medical history.
+            Donors are needed  for all races and ethinc groups.
+            Transplant success rates increase when organs are matched between members of the same ethinc background.</p>
+
+			 </div>
+		</div>
+	</div>
+</section>
 
 
 
+<!-- round icons -->
+<section>
+	<div class="container">
+		<div class="text-center">
+			<h5>HOW TO BECOME A ORAGN DONOR</h5>
+		</div>
+		<div class="row">
+    <div class="col-sm-12 col-md-4 text-center" >
+				<img src="images/1-1.jpg" alt="" width="250px">
+				
+				<p>Learn more about organ donation</p>
+		</div>
 
-<?php include('templates/footer.html');?>
+		<div class="col-sm-12 col-md-4 text-center">
+				<img src="images/1-2.jpg" alt="" width="250px">
+				<p>Register and fill in the form</p>
+		</div>
 
+		<div class="col-sm-12 col-md-4 text-center">
+				<img src="images/1-3.jpg" alt="" width="250px">
+				<p>Donate your organ</p>
+		</div>
+		</div>
 		
+
+	</div>
+</section>
+
+
+<!-- click now 
+<section>
+	<div class="container">
+		<div class="text-center">
+	       <h5 >Click ‘Register Now’</h5>
+		</div>
+
+    <div class="row">
+			
+		</div>
+
+	</div>
+</section>-->
+
+
+
+
+
+<?php include 'templates/footer.html';?>
+
+
 	</main>
 
 
