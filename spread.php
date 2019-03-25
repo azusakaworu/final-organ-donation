@@ -25,10 +25,9 @@
 
 <?php include('templates/header.html');?>
 
-this is spread page
 
 <?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
-<img src="images/<?php echo $row['spread_img'];?>" 
+<img style="width:500px;" src="images/<?php echo $row['spread_img'];?>" 
 	 alt="<?php echo $row['spread_title'];?>">
 	 
 	 <h2><?php echo $row['spread_title'];?></h2>

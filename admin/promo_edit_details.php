@@ -8,27 +8,25 @@
 
 //先不要想具体解决办法，先把思路搞通， 选择走哪条路
 
-$id = $_GET['id'];
 //
 if (isset($_GET['id'])) {
+    $id               = $_GET['id'];
     $found_spread_set = selectEdit($id);
-} else {
+    if (is_string($found_spread_set)) {
+        $message = 'Failed to get spread info!';
+    }
+} else if (!isset($_POST['submit'])) {
     redirect_to('admin_editPromo.php');
 }
 
-if (is_string($found_spread_set)) {
-    $message = 'Failed to get spread info!';
-
-}
-
 if (isset($_POST['submit'])) {
-
+    $id    = $_POST['sid'];
     $cover = $_FILES['cover'];
     $title = $_POST['title'];
     $text  = $_POST['text'];
 
     //Validation empty检查 变量存在 值是非空 非0 返回false （其他情况返回true
-    if (empty($id) || empty($cover) || empty($title) || empty($text) 
+    if (empty($id) || empty($cover) || empty($title) || empty($text)
     ) {
         $message = 'Please fill the required fields0-0...';
     } else { //返回false 执行这里
@@ -64,7 +62,8 @@ if (isset($_GET['id'])) {
 
 <!-- PDO::query() returns a PDOStatement object, or FALSE on failure. -->
 	<?php while ($found_spread = $found_spread_set->fetch(PDO::FETCH_ASSOC)): ?>
-		<form action="promo_edit_details.php?id=<?php echo $found_spread['spread_id']; ?>" method="post"  enctype="multipart/form-data">
+		<form action="promo_edit_details.php" method="post"  enctype="multipart/form-data">
+        <input type="hidden" name="sid" value="<?php echo $found_spread['spread_id']; ?>">
         <label for="cover">Cover Image:</label>
         <input type="file" name="cover" id="cover" value="<?php echo $found_spread['spread_img']; ?>"><br><br>
 
@@ -72,10 +71,10 @@ if (isset($_GET['id'])) {
         <input type="text" name="title" id="title" value="<?php echo $found_spread['spread_title']; ?>"><br><br>
 
 
-    
+
 
 <!-- textarea no value 怎么显示原有的文字 -->
-        <label for="story">spread Storyline:</label>
+        <label for="story">Spread Text:</label>
         <textarea name="text" id="story">
         <?php echo $found_spread['spread_text']; ?>
         </textarea><br><br>
