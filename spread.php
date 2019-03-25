@@ -1,3 +1,8 @@
+<?php require_once('admin/scripts/config.php');
+
+	$results = getAll('tbl_spread');
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +27,14 @@
 
 this is spread page
 
-
+<?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
+<img src="images/<?php echo $row['spread_img'];?>" 
+	 alt="<?php echo $row['spread_title'];?>">
+	 
+	 <h2><?php echo $row['spread_title'];?></h2>
+	 <p><?php echo $row['spread_text'];?></p>
+	 
+<?php endwhile;?>
 
 
 <?php include('templates/footer.html');?>
