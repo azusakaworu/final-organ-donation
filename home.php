@@ -7,7 +7,8 @@
 		<!-- bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 	<title>Organ Donation Home</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
@@ -25,13 +26,13 @@
   <div class="container">
   <h4 class="text-center">All About Organ Donation</h4>
   <h5 class="text-center">Have a question about Organ Donation? You've come to the right place!</h5>
-  <p>is a non-profit organ donor registration campaign affiliated with Trillium Gift of Life Network. Our campaign strives to educate the public on the importance of organ donation and becoming an organ donor. Our campaign strives to educate the public on the importance of organ donation and becoming a donor. We encourage you to communicate to your relatives about your decision as they are able to veto your choice even if you are registered. Sometimes there are things we need to talk about with the people we care most for. Through word of mouth and social media we can spread the message and save lives together.</p>
+  <p>Organ Donation is a non-profit organ donor registration campaign affiliated with Trillium Gift of Life Network. Our campaign strives to educate the public on the importance of organ donation and becoming an organ donor. Our campaign strives to educate the public on the importance of organ donation and becoming a donor. We encourage you to communicate to your relatives about your decision as they are able to veto your choice even if you are registered. Sometimes there are things we need to talk about with the people we care most for. Through word of mouth and social media we can spread the message and save lives together.</p>
   </div>
 </section>
 
 
 
-<section  style="background-color:#aedbf2;">
+<section class="homeBC">
   <h4 class="text-center">Did you know that...</h4>
   <div class="container">
     <div class="row">
@@ -41,9 +42,9 @@
         <p>And Can Enhance the lives of up to 75 more through the gift of tissue.</p>
         <p>31% of Ontarians are registered donors. That’s 3.7 million out of an eligible 12.1 million.</p>
       </div>
-      <div class="col-sm-12 col-md-6">
-        <img src="images/people.png" alt="">
-        <img src="images/hero.png" alt="">
+      <div class="col-sm-12 col-md-6 ">
+        <img class="homeI" src="images/people.png" alt="">
+        <img class="home2" src="images/hero.png" alt="">
       </div>
     </div>
 
@@ -79,7 +80,7 @@
 <section  >
   <div class="container">
     <div class="text-center">
-      <h5>Spread the word to save more lives.</h5>
+      <h5>Spread the world to save more lives.</h5>
     </div>
 
     <div class="row">
@@ -99,7 +100,7 @@
 
 
       <div class="col-12">
-        <p>Once you’ve registered your consent to donate, come back and encourage your friends and family members to do the same.</p>
+        <p class="lightfont">Once you’ve registered your consent to donate, come back and encourage your friends and family members to do the same.</p>
       </div>
 
     </div>

@@ -1,4 +1,67 @@
-/*css final project*/
+* {
+  border: 0;
+  padding: 0;
+  margin: 0; }
 
-.boxhelper{background-color: black;height: 200px;}
+h4 {
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 30px;
+  padding-top: 30px; }
 
+h5 {
+  font-size: 1.7em;
+  font-family: "Kanit", sans-serif;
+  color: red;
+  margin-bottom: 40px; }
+
+p {
+  font-size: 1.2em;
+  line-height: 40px;
+  margin-bottom: 20px; }
+
+section {
+  margin-bottom: 100px; }
+
+.homeBC {
+  background-color: #aedbf2; }
+
+video {
+  margin-bottom: 50px; }
+
+.whitetext {
+  color: white; }
+
+.margintop {
+  margin-top: 50px; }
+
+#socialIcon a img {
+  margin-right: 10px; }
+
+.lightfont {
+  font-weight: lighter; }
+
+@media (max-width: 575.98px) {
+  .homeI {
+    width: 200px; }
+
+  .home2 {
+    width: 100px; } }
+.spredTitle {
+  font-weight: bold;
+  font-family: "Kanit", sans-serif;
+  margin-bottom: 10px;
+  margin-top: 5px; }
+
+.spreadText {
+  font-weight: lighter;
+  margin-bottom: 100px; }
+
+.spreadImg {
+  width: 500px; }
+
+@media (max-width: 575.98px) {
+  .spreadImg {
+    width: 300px; } }
+
+/*# sourceMappingURL=main.css.map */

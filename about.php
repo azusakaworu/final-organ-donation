@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 	<title>Organ Donation About</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
@@ -46,7 +47,7 @@
 </section>
 
 
-<section  style="background-color:#aedbf2;" >
+<section class="homeBC" >
 	<div class="container">
 		<div class="row">
 
@@ -55,8 +56,8 @@
 
 		</div>
 			 <div class="col-sm-12 col-md-6">
-				 <h5>WHY BECOME A ORGAN </h5>
-				 <p>22 people die every day while waiting for a transplant.
+				 <h5 class="margintop">WHY BECOME A ORGAN </h5>
+				 <p class="whitetext">22 people die every day while waiting for a transplant.
             1 organ donor can save 8 lives and change the lives of more then 50 people.
             Almost anyone can be organ donor, ragardless of age or medical history.
             Donors are needed  for all races and ethinc groups.
@@ -79,7 +80,7 @@
     <div class="col-sm-12 col-md-4 text-center" v-for="item in items">
 				<img :src="'images/' + item.img" alt="" width="250px">
 				
-				<p>{{item.text}}</p>
+				<p class="lightfont">{{item.text}}</p>
 		</div>
 		</div>
 		

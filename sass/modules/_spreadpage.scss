@@ -1,8 +1,10 @@
-video { width: 100%; }
+.spredTitle{font-weight: bold;font-family:$title-fonts;margin-bottom: 10px;margin-top: 5px;}
+.spreadText{font-weight:lighter;margin-bottom: 100px;}
+.spreadImg{width: 500px;}
 
-
-h5{ font-size: 1.7em; }
-p { font-size: 1.5em; }
+@media (max-width: 575.98px) { 
+    .spreadImg{width: 300px;}
+ }
 
 
 

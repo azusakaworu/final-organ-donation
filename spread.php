@@ -1,6 +1,6 @@
-<?php require_once('admin/scripts/config.php');
+<?php require_once 'admin/scripts/config.php';
 
-	$results = getAll('tbl_spread');
+$results = getAll('tbl_spread');
 
 ?>
 <!DOCTYPE html>
@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 	<title>Organ Donation Spread</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
@@ -23,22 +24,35 @@
 <body>
 	<main id="app">
 
-<?php include('templates/header.html');?>
+<?php include 'templates/header.html';?>
 
+<div class="container">
+	<div class="row">
 
-<?php while($row = $results->fetch(PDO::FETCH_ASSOC)):?>
-<img style="width:500px;" src="images/<?php echo $row['spread_img'];?>" 
-	 alt="<?php echo $row['spread_title'];?>">
+<?php while ($row = $results->fetch(PDO::FETCH_ASSOC)): ?>
+<div class="col-sm-12 col-md-6">
+<img class="spreadImg shadow p-3 mb-5 bg-white rounded" src="images/<?php echo $row['spread_img']; ?>"
+	 alt="<?php echo $row['spread_title']; ?>">
+</div>
+<div class="col-sm-12 col-md-6">
+	<h2 class="spredTitle"><?php echo $row['spread_title']; ?></h2>
+	 <p class="spreadText"><?php echo $row['spread_text']; ?></p>
+</div>
+
 	 
-	 <h2><?php echo $row['spread_title'];?></h2>
-	 <p><?php echo $row['spread_text'];?></p>
-	 
+
 <?php endwhile;?>
 
+	</div>
+</div>
 
-<?php include('templates/footer.html');?>
 
-		
+
+
+
+<?php include 'templates/footer.html';?>
+
+
 	</main>
 
 
