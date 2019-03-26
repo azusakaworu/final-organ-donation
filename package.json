@@ -1,0 +1,28 @@
+{
+  "name": "final-organ-donation",
+  "version": "1.0.0",
+  "description": "organ donation cms vue ",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azusakaworu/final-organ-donation.git"
+  },
+  "keywords": [
+    "cms"
+  ],
+  "author": "Ling Ding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azusakaworu/final-organ-donation/issues"
+  },
+  "homepage": "https://github.com/azusakaworu/final-organ-donation#readme"
+}

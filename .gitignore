@@ -1,4 +1,9 @@
-/node_modules
-/Integrated Project
+
 /assets
 /video
+
+
+node_modules
+.sass-cache
+*.zip
+.DS_Store

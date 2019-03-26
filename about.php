@@ -21,14 +21,14 @@
 <?php include 'templates/header.html';?>
 
 <section>
-	<div class="container">
-		<div class="row">
-		<div class="col-12">
-				<video width="1000px"  poster="images/video-cover.jpg" controls>
-         <source src="video/1080.mp4" type="video/mp4">
+	
+		<div >
+				<video id="vid"  poster="images/video-cover.jpg" controls width="100%">
+         <!-- <source src="video/1080.mp4" type="video/mp4"> -->
       </video>
 		</div>
-
+<div class="container">
+		<div class="row">
 		<div class="col-sm-12 col-md-4">
 			<img src="images/text1.png" alt=""width="300px">
 		</div>
@@ -76,20 +76,10 @@
 			<h5>HOW TO BECOME A ORAGN DONOR</h5>
 		</div>
 		<div class="row">
-    <div class="col-sm-12 col-md-4 text-center" >
-				<img src="images/1-1.jpg" alt="" width="250px">
+    <div class="col-sm-12 col-md-4 text-center" v-for="item in items">
+				<img :src="'images/' + item.img" alt="" width="250px">
 				
-				<p>Learn more about organ donation</p>
-		</div>
-
-		<div class="col-sm-12 col-md-4 text-center">
-				<img src="images/1-2.jpg" alt="" width="250px">
-				<p>Register and fill in the form</p>
-		</div>
-
-		<div class="col-sm-12 col-md-4 text-center">
-				<img src="images/1-3.jpg" alt="" width="250px">
-				<p>Donate your organ</p>
+				<p>{{item.text}}</p>
 		</div>
 		</div>
 		
@@ -98,19 +88,6 @@
 </section>
 
 
-<!-- click now 
-<section>
-	<div class="container">
-		<div class="text-center">
-	       <h5 >Click ‘Register Now’</h5>
-		</div>
-
-    <div class="row">
-			
-		</div>
-
-	</div>
-</section>-->
 
 
 
