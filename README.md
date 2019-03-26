@@ -12,9 +12,7 @@ Our team foucse on create a website that make more people pay close attention to
 HTML5, CSS3, Javascript, PHP, Database, mySQL, CMS
 Vue  Bootstrap
 
-```
-method1: cdn for bootstrap vue2.0 
-```
+
 
 ### Installing
 
