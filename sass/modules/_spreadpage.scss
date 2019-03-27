@@ -2,7 +2,7 @@
 .spreadText{font-weight:lighter;margin-bottom: 100px;}
 .spreadImg{width: 500px;}
 
-@media (max-width: 575.98px) { 
+@include media(">phone", "<=tablet") { 
     .spreadImg{width: 300px;}
  }
 
