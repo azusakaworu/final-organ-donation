@@ -20,7 +20,7 @@ video{margin-bottom: 50px;}
 
 
 
-@media (max-width: 575.98px) { 
+@include media(">phone", "<=tablet") { 
     .homeI  {width: 200px;}
     .home2{width: 100px;}
  }
